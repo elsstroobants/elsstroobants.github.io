@@ -1,0 +1,363 @@
+/* recommendations article Tania Rascia */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* general */
+body {
+  font-family: Roboto;
+  color: #777;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  background-color: #6dc8d4;
+  cursor: pointer;
+}
+
+.email a:hover {
+
+  background-image:image()
+
+
+}
+
+.site-container {
+  max-width: 78rem;
+  margin: 0 auto;
+}
+
+.divlink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s linear, 0.5s;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+.line {
+  background-color: #6dc8d4;
+  width: 3rem;
+  height: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+/* header */
+header {
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #6dc8d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+nav span a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#blog {
+  display: none;
+}
+
+.logo-container {
+  padding-left: 0.5rem;
+  color: #777;
+}
+
+
+/*who am I section*/
+
+.who {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  display: block // removes border at the bottom
+}
+
+
+/*what I do section*/
+
+.what {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+/*portfolio section*/
+
+#portfolio {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  width: 90%;
+  height: 13rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.project p {
+  color: white;
+  font-size: 1rem;
+}
+
+
+#fotomatic {
+  background-image: url("../images/fotomatic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#secretagent {
+  background-image: url("../images/secretagent.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#teacozy {
+  background-image: url("../images/teacozy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#tortoiseshell {
+  background-image: url("../images/tortoiseshell.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+#excursion {
+  background-image: url("../images/excursion.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#colmar {
+  background-image: url("../images/colmar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#jumpstart {
+  background-image: url("../images/jumpstart.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#mytimes {
+  background-image: url("../images/mytimes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 40rem) {
+  .projects {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    margin: 2rem;
+    width: 100%;
+    max-width: 13rem;
+    max-height: 13rem;
+  }
+}
+
+
+
+/*about me section */
+
+#about {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 80rem;
+}
+
+#about img {
+  height: 10rem;
+  border-radius: 5rem;
+  padding: 2rem;
+}
+
+#contact {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*contact section*/
+.info-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.email,
+.phone {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+
+.email img {
+  width: 3rem;
+}
+
+/*footer section*/
+
+footer{
+  position: relative;
+  top: 3rem;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  }
+
+
+footer .copyright {
+  text-align: left;
+  color: black;
+  font-size: 0.8rem;
+}
+
+
+/* form styling
+
+Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
