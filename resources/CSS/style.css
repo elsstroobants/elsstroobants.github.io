@@ -17,13 +17,7 @@ body {
 a:hover {
   background-color: #6dc8d4;
   cursor: pointer;
-}
-
-.email a:hover {
-
-  background-image:image()
-
-
+  color: #ff8100
 }
 
 .site-container {
@@ -35,7 +29,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  transition: background-color 0.5s linear, 0.5s;
+  transition: background-color 0.5s linear 0s;
 }
 
 h1 {
@@ -87,10 +81,21 @@ nav span a {
 }
 
 .logo-container {
-  padding-left: 0.5rem;
+  padding-left: 0.25rem;
   color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
+.lang_en {
+  display: inline;
+}
+
+.lang_nl {
+  display: none;
+}
 
 /*who am I section*/
 
@@ -107,18 +112,13 @@ nav span a {
 
 .banner {
   width: 100%;
+  height: 12rem;
   position: relative;
   top: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.banner img {
-  width: 100%;
-  display: block // removes border at the bottom
+  background-image: url("../images/office.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+  background-size: cover;
 }
 
 
@@ -131,7 +131,7 @@ nav span a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 4rem 2rem 4rem 2rem;
   text-align: center;
 }
 
@@ -145,7 +145,7 @@ nav span a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem 0 2rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .projects {
@@ -172,10 +172,7 @@ nav span a {
   text-decoration: none;
 }
 
-.project p {
-  color: white;
-  font-size: 1rem;
-}
+
 
 
 #fotomatic {
@@ -209,7 +206,7 @@ nav span a {
 #excursion {
   background-image: url("../images/excursion.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
 }
 
@@ -251,18 +248,18 @@ nav span a {
 }
 
 
-
 /*about me section */
 
 #about {
   position: relative;
-  top: 3rem;
+  top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  max-width: 80rem;
+  padding: 4rem 2rem 2rem 2rem;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 #about img {
@@ -278,20 +275,20 @@ nav span a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
 }
 
 /*contact section*/
 .info-box{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.email,
-.phone {
+.email {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -303,6 +300,12 @@ nav span a {
 .email img {
   width: 3rem;
 }
+
+.email_logo {
+    display: block;
+    background-color: #ffffff;
+}
+
 
 /*footer section*/
 
@@ -318,46 +321,8 @@ footer{
   background-color: #f3f3f3;
   }
 
-
 footer .copyright {
   text-align: left;
   color: black;
   font-size: 0.8rem;
-}
-
-
-/* form styling
-
-Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 }

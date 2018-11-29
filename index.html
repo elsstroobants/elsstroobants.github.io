@@ -17,13 +17,20 @@
 
       <header>
         <div class="logo-container">
-          <span>Els Stroobants</span>
+          <img src="./resources/images/logo_white.png" alt="logo Els">
         </div>
         <nav class="nav-container">
           <span><a href=#portfolio>PORTFOLIO</a></span>
-          <span><a href=#about>ABOUT</a></span>
+
+          <span>
+            <a href=#about>
+              <span class="lang_en">ABOUT</span>
+              <span class="lang_nl">OVER</span>
+            </a>
+          </span>
           <span id="blog"><a href=#>BLOG</a></span>
           <span><a href=#contact>CONTACT</a></span>
+          <span><a title="English" href="#" onclick="selectLang('en'); return false;">EN</a> | <a title="Nederlands" href="#" onclick="selectLang('nl'); return false;">NL</a></span>
         </nav>
       </header>
 
@@ -31,16 +38,18 @@
       <!--who-->
 
       <div class="who">
-        <h1>I'm Els</h1>
+        <h1>Els Stroobants</h1>
         <div class="line">
         </div>
-        <p class="leuven">I'm a freelance web developer based in Leuven, Belgium.</p>
-      </div>
+          <p>
+            <span class="lang_en">I'm a freelance web developer based in Leuven, Belgium.</span>
+            <span class="lang_nl">Ik ben een freelance web developer uit Leuven.</span>
+          </p>
+        </div>
 
       <!--banner-->
 
       <div class="banner">
-        <img src="./resources/images/office4.jpg" alt="home-office">
       </div>
 
 
@@ -48,11 +57,17 @@
       <!--what-->
 
       <div class="what">
-        <h1>What I do</h1>
+        <h1>
+          <span class="lang_en">What I do</span>
+          <span class="lang_nl">Wat ik doe</span>
+        </h1>
         <div class="line">
         </div>
-        <p>I build websites from scratch. This means that any layout is possible. The sky is the limit! HTML, CSS and JavaScript are my tools.
-        The websites I build can adapt to every screen size. </p>
+        <p>
+          <span class="lang_en">I build websites from scratch, so no restriction to standard templates. HTML, CSS and JavaScript are my tools.
+          The websites I build can be made to adapt to mobile, tablet and desktop.</span>
+          <span class="lang_nl">Ik maak websites met behulp van HTML, CSS en JavaScript. Hierdoor zijn er geen beperkingen in layout en fuctionaliteit van standaard templates. De websites kunnen zich aanpassen aan GSM-, tablet- en desktopformaat.</span>
+         </p>
       </div>
 
       <!--Portfolio-->
@@ -63,27 +78,27 @@
         </div>
         <div class="projects">
           <div class="project" id="fotomatic">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/fotomatic">
               <h2 class="title">FOTOMATIC</h2>
             </a>
           </div>
           <div class="project" id="secretagent">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/secretagent">
               <h2>SECRET AGENT</h2>
             </a>
           </div>
           <div class="project" id="teacozy">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/teacozy">
               <h2>TEACOZY</h2>
             </a>
           </div>
           <div class="project" id="tortoiseshell">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/tortoiseshell">
               <h2>TORTOISESHELL</h2>
             </a>
           </div>
           <div class="project" id="excursion">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/excursion">
               <h2>EXCURSION</h2>
             </a>
           </div>
@@ -93,47 +108,54 @@
             </a>
           </div>
           <div class="project" id="jumpstart">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/jumpstart">
               <h2>JUMPSTART</h2>
             </a>
           </div>
           <div class="project" id="mytimes">
-            <a class="divlink" href="#about">
+            <a class="divlink" href="http://elsstroobants.github.io/jumpstart">
               <h2>MYTIMES</h2>
             </a>
           </div>
-
-
         </div>
-
       </div>
 
       <!--about-->
 
       <div id ="about">
-        <h1>About me</h1>
+        <h1>
+          <span class="lang_en">About me</span>
+          <span class="lang_nl">Over mij</span>
+        </h1>
         <div class="line">
         </div>
         <img src="./resources/images/els.jpg" alt="Els Stroobants"/>
-        <p>I have a passion for beautiful things that work well.<br><br> With a masters degree in architecture and engineering and over a decade of experience in the corporate world in my pocket, I am keen to create value for people with good ideas. I will go the extra mile for any initiative with a noble cause, whether social or environmental.</p>
-        <br>
-        <p>I work from home and carefully balance my time between web development, coaching my daughters into their teenage years and being a servant to my two ginger cats.
+        <p>
+          <span class="lang_en">I enjoy making beautiful things that work well.<br><br> With a master's degree in architecture and engineering in my pocket and over a decade of experience in the corporate world, I felt the need to broaden my horizon. I looked for something challenging, fun and meaningful. So, I learned how to code. With my newly acquired skills I am keen to create value for people with good ideas.
+          <br><br>
+          I work from home and balance my time between web development, coaching my daughters into their teenage years and being a servant to my two ginger cats.
+          </span>
+          <span class="lang_nl">Ik maak graag mooie dingen die het gewoon goed doen.<br><br>Met een masterdiploma architectuur en bouwkundig ingenieur op zak en een dikke tien jaar ervaring in de "corporate world", had ik behoefte om mijn grenzen opnieuw te verleggen. Ik zocht een uitdaging, maar ook een manier om een steentje bij te dragen aan het geluk van anderen, aan zinvolle projecten en misschien wel aan een tikkeltje betere wereld. Ik besloot om te leren programmeren. Met mijn recent verworven vaardigheden wil ik graag mensen met goede ideeën verder op weg helpen.<br><br>
+          Ik werk van thuis en ik verdeel mijn tijd tussen web development, het coachen van mijn tienerdochters en het op hun wenken bedienen van mijn 2 rosse katten.</span>
         </p>
       </div>
 
       <!--contact-->
 
       <div id="contact">
-        <h1>Get in touch</h1>
+        <h1>
+          <span class="lang_en">Get in touch</span>
+          <span class="lang_nl">Contact</span>
+        </h1>
         <div class="line">
         </div>
-        <p>Do you want to build something together? Or do you want to discuss other topics, including but not limited to walking in Scotland, Vinyasa yoga, minimalism or life with teenagers? Then we should get in touch, I love a good cup of coffee…</p>
-
+        <p>
+          <span class="lang_en">Do you have an idea of something you want to build? Then we should get in touch… <br><br>Please introduce yourself via email and let me know how I can help.</span>
+          <span class="lang_nl">Heb je een goed idee? Heb je daar een website bij nodig? Of heb je een website die je wil aanpassen? <br><br>Stuur me een email en laat me weten hoe ik je kan helpen. </span>
+        </p>
         <div class="info-box">
           <div class="email">
-            <form action="mailto:elsstroobants@hotmail.com">
-              <input type="image" src="./resources/images/emailiconbluesmall.png" border="0" alt="Submit" />
-            </form>
+            <a href="mailto:elsstroobants@hotmail.com" target="_top"><img class="email_logo" src="./resources/images/email_blue.png" onmouseout="this.src='./resources/images/email_blue.png'" onmouseover="this.src='./resources/images/email_orange.png'"></a>
           </div>
         </div>
       </div>
@@ -144,6 +166,32 @@
       <p class="copyright">&copy 2018 Els Stroobants </p>
     </footer>
 
+    <script type="text/javascript">
+      // List of all supported languages
+      const languages = ['en', 'nl'];
+
+      // Call this function to set the language
+      function selectLang(selectedLang) {
+        // Iterate over all language codes
+        for (let langIndex = 0; langIndex < languages.length; langIndex++) {
+          let langCode = languages[langIndex];
+
+          // Choose if the current language should be displayed or not
+          let display;
+          if (selectedLang === langCode) {
+            display = 'inline';
+          } else {
+            display = 'none';
+          }
+
+          // Find all elements for the current language code
+          let elements = document.getElementsByClassName('lang_' + langCode);
+          for (let elIndex = 0; elIndex < elements.length; elIndex++) {
+            elements[elIndex].style.display = display;
+          }
+        }
+      }
+    </script>
 
   </body>
 </html>
