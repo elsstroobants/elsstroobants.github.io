@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="./resources/icons/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+
+      <!--Header-->
+
+      <header>
+        <div class="logo-container">
+          <img src="./resources/images/logo_white.png" alt="logo Els">
+        </div>
+        <nav class="nav-container">
+          <span><a href="index.html#portfolio">PORTFOLIO</a></span>
+          <span>
+            <a id="nav_about" href="index.html#about">
+              <span class="lang_en">ABOUT</span>
+              <span class="lang_nl">OVER</span>
+            </a>
+          </span>
+          <span id="nav_blog"><a href="#">BLOG</a></span>
+          <span><a href="index.html#contact">CONTACT</a></span>
+          <!--<span><a title="English" href="#" onclick="selectLang('en'); return false;">EN</a> | <a title="Nederlands" href="#" onclick="selectLang('nl'); return false;">NL</a></span>-->
+        </nav>
+      </header>
+
+
+      <div class= "site-container">
+
+        <!--ravenous-->
+
+        <div id="jammming-text">
+
+          <h1>
+            <span class="lang_en">Jammming</span>
+            <span class="lang_nl">Jammming</span>
+          </h1>
+          <div class="line">
+          </div>
+
+          <p>
+            <span class="lang_en"> This app was created to be able to have chill jammming sessions. You can type any keyword, name or title and and get a list of tracks related to your search which you can then add to a playlist. Simple and fun!
+            <br><br>
+            React JS was used to build the app, which is perfect for this type of app since its modular set-up avoids lengthy unnecessary repetitive code.
+            <br><br>
+            </span>
+            <span class="lang_nl">Met deze app kan je jammming sessies houden. Je geeft een woord, naam of titel in en je krijgt een lijst met tracks die overeenkomen met je zoekterm. Vervolgens kan je deze tracks toevoegen aan een playlist. Hoe chill is dat?
+            <br><br>
+            Voor het ontwikkelen van deze app werd React JS gebruikt. Met React JS kan je efficiënt programmeren en onnodige repetitie vermijden.
+            <br><br>
+            </span>
+          </p>
+
+        </div>
+        <div id ="jammming-screenshot">
+          <img src="./resources/images/jammming_screenshot.jpg" alt ="screenshot jammming app"/>
+        </div>
+
+
+      </div>
+
+      <!--footer-->
+      <footer>
+        <p class="copyright">&copy 2019 Els Stroobants </p>
+      </footer>
+
+      <script type="text/javascript">
+        // List of all supported languages
+        const languages = ['en', 'nl'];
+
+        // Call this function to set the language
+        function selectLang(selectedLang) {
+          // Iterate over all language codes
+          for (let langIndex = 0; langIndex < languages.length; langIndex++) {
+            let langCode = languages[langIndex];
+
+            // Choose if the current language should be displayed or not
+            let display;
+            if (selectedLang === langCode) {
+              display = 'inline';
+            } else {
+              display = 'none';
+            }
+
+            // Find all elements for the current language code
+            let elements = document.getElementsByClassName('lang_' + langCode);
+            for (let elIndex = 0; elIndex < elements.length; elIndex++) {
+              elements[elIndex].style.display = display;
+            }
+          }
+        }
+      </script>
+
+    </body>
+  </html>

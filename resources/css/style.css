@@ -54,11 +54,11 @@ h2 {
 }
 
 .lang_en {
-  display: inline;
+  display: none;
 }
 
 .lang_nl {
-  display: none;
+  display: inline;
 }
 
 /* header */
@@ -200,8 +200,6 @@ nav span a {
 }
 
 
-
-
 #fotomatic {
   background-image: url("../images/fotomatic.jpg");
   background-repeat: no-repeat;
@@ -257,6 +255,21 @@ nav span a {
   background-position: center;
   background-size: cover;
 }
+
+#ravenous {
+  background-image: url("../images/ravenous.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#jammming {
+  background-image: url("../images/jammming.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 @media only screen and (min-width: 40rem) {
   .projects {
@@ -333,6 +346,40 @@ nav span a {
     display: block;
     background-color: #ffffff;
 }
+
+/*ravenous page*/
+#ravenous-text,
+#jammming-text {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 2rem 0rem 2rem;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+#ravenous-screenshot,
+#jammming-screenshot {
+
+  position: relative;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#ravenous-screenshot img,
+#jammming-screenshot img{
+border: solid 1px grey;
+width: 90%;
+margin-bottom: 3rem;
+}
+
 
 
 /*footer section*/

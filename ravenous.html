@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="./resources/icons/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+
+      <!--Header-->
+
+      <header>
+        <div class="logo-container">
+          <img src="./resources/images/logo_white.png" alt="logo Els">
+        </div>
+        <nav class="nav-container">
+          <span><a href="index.html#portfolio">PORTFOLIO</a></span>
+          <span>
+            <a id="nav_about" href="index.html#about">
+              <span class="lang_en">ABOUT</span>
+              <span class="lang_nl">OVER</span>
+            </a>
+          </span>
+          <span id="nav_blog"><a href="#">BLOG</a></span>
+          <span><a href="index.html#contact">CONTACT</a></span>
+          <!--<span><a title="English" href="#" onclick="selectLang('en'); return false;">EN</a> | <a title="Nederlands" href="#" onclick="selectLang('nl'); return false;">NL</a></span> -->
+        </nav>
+      </header>
+
+
+      <div class= "site-container">
+
+        <!--ravenous-->
+
+        <div id="ravenous-text">
+
+          <h1>
+            <span class="lang_en">Ravenous</span>
+            <span class="lang_nl">Ravenous</span>
+          </h1>
+          <div class="line">
+          </div>
+
+          <p>
+            <span class="lang_en"> This app helps you to find restaurants based on their location, category and customer rating.
+            <br><br>
+            This app was made by using React JS. React JS is a JavaScript library that makes it possible to work with reusable components. Very simple, efficient and fast, and if you ask me, definitely the way to go for this type of app.
+            <br><br>
+            </span>
+            <span class="lang_nl">Met deze app kan je zoeken naar restaurants op basis van hun ligging, categorie en bezoekersscore.
+            <br><br>
+            Deze app is gemaakt met gebruik van React JS. React JS is een JavaScript library die het mogelijk maakt om met herbruikbare componenten te werken. Heel eenvoudig en snel en daarom, als je het mij vraagt, de 'way to go' voor dit soort apps.
+            <br><br>
+            </span>
+          </p>
+
+        </div>
+        <div id ="ravenous-screenshot">
+          <img src="./resources/images/ravenous_screenshot.jpg" alt ="screenshot ravenous app"/>
+        </div>
+
+
+      </div>
+
+      <!--footer-->
+      <footer>
+        <p class="copyright">&copy 2019 Els Stroobants </p>
+      </footer>
+
+      <script type="text/javascript">
+        // List of all supported languages
+        const languages = ['en', 'nl'];
+
+        // Call this function to set the language
+        function selectLang(selectedLang) {
+          // Iterate over all language codes
+          for (let langIndex = 0; langIndex < languages.length; langIndex++) {
+            let langCode = languages[langIndex];
+
+            // Choose if the current language should be displayed or not
+            let display;
+            if (selectedLang === langCode) {
+              display = 'inline';
+            } else {
+              display = 'none';
+            }
+
+            // Find all elements for the current language code
+            let elements = document.getElementsByClassName('lang_' + langCode);
+            for (let elIndex = 0; elIndex < elements.length; elIndex++) {
+              elements[elIndex].style.display = display;
+            }
+          }
+        }
+      </script>
+
+    </body>
+  </html>
