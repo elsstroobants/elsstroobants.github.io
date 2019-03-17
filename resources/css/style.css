@@ -12,6 +12,8 @@ body {
   font-family: 'Roboto', Helvetica, sans-serif;
   color: #777;
   line-height: 1.5rem;
+  /* padding-bottom: 3rem;
+  min-height: 100%; */
 }
 
 a:hover {
