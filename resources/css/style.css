@@ -65,7 +65,7 @@ h2 {
 
 /* header */
 header {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -272,6 +272,19 @@ nav span a {
   background-size: cover;
 }
 
+#zespri {
+  background-image: url("../images/zespri2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#veggiezz {
+  background-image: url("../images/veggiezz.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 @media only screen and (min-width: 40rem) {
   .projects {
@@ -351,20 +364,24 @@ nav span a {
 
 /*ravenous page*/
 #ravenous-text,
-#jammming-text {
+#jammming-text,
+#zespri-text,
+#veggiezz-text {
   position: relative;
   top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   max-width: 30rem;
   margin: 0 auto;
 }
 
 #ravenous-screenshot,
-#jammming-screenshot {
+#jammming-screenshot,
+#zespri-screenshot,
+#veggiezz-screenshot {
 
   position: relative;
   top: 4rem;
@@ -376,12 +393,17 @@ nav span a {
 }
 
 #ravenous-screenshot img,
-#jammming-screenshot img{
-border: solid 1px grey;
-width: 90%;
-margin-bottom: 3rem;
+#jammming-screenshot img,
+#zespri-screenshot img,
+#veggiezz-screenshot img {
+  width: 90%;
+  margin-bottom: 3rem;
 }
 
+#ravenous-screenshot img,
+#jammming-screenshot img {
+  border: solid 1px grey;
+}
 
 
 /*footer section*/
